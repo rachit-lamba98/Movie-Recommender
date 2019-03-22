@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/glitch.css">
+<link rel="stylesheet" href="/static/search.css">
+<body>
+<div id="app">
+	<div id="wrapper">
+		<!-- Make sure data-text equals the text you put inside the tags. -->
+		<h1 class="glitch" data-text="
+Movieee">Movieee</h1>
+		<span class="sub">Recommender</span>
+	</div>
+<div id="wrap">
+<!--
+  <form action="" autocomplete="on">
+  <input id="search" name="search" type="text" placeholder="what're you searchin'?"><input id="search_submit" value="Rechercher" type="submit">
+  </form>
+-->
+<form action = "{{ url_for('rec')}}" method = "post">
+  <input type="search" name="search" type="text" placeholder="Tell us your choice of movie....">
+  <i class="fa fa-search"></i>
+</form>
+</div>
+</div> 
+        
+
+</body>
+</html>
